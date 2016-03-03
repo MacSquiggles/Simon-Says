@@ -122,6 +122,24 @@
   <ItemGroup>
     <None Include="Resources\white background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-09.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screens\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

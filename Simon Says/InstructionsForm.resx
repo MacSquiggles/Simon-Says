@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="instructionsLabel.Text" xml:space="preserve">
-    <value>How to Play:                                         A random coloured block will flash, making a pattern. You must copy the pattern and click on the correct button, repeating the patter. The more you get correct, the more points you receive.</value>
+    <value>How to Play:                                              A random coloured block will flash, making a pattern. You must memorize the pattern and repeat it by clicking on the correct buttons. The more patterns you get correct, the more points you will receive. If you guess the pattern wrong it is game over.</value>
   </data>
 </root>

@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Simon_Says.Properties.Resources.white_background;
+            this.BackgroundImage = global::Simon_Says.Properties.Resources.whitebackground;
             this.Controls.Add(this.instructionsButton);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.label1);

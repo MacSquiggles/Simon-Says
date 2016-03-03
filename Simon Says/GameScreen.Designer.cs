@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gameExitButton = new System.Windows.Forms.Button();
             this.yellowButton = new System.Windows.Forms.Button();
             this.blueButton = new System.Windows.Forms.Button();
             this.greenButton = new System.Windows.Forms.Button();
@@ -37,22 +36,9 @@
             this.pointsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // gameExitButton
-            // 
-            this.gameExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.gameExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gameExitButton.ForeColor = System.Drawing.Color.White;
-            this.gameExitButton.Location = new System.Drawing.Point(540, 3);
-            this.gameExitButton.Name = "gameExitButton";
-            this.gameExitButton.Size = new System.Drawing.Size(60, 50);
-            this.gameExitButton.TabIndex = 1;
-            this.gameExitButton.Text = "X";
-            this.gameExitButton.UseVisualStyleBackColor = false;
-            this.gameExitButton.Click += new System.EventHandler(this.gameExitButton_Click);
-            // 
             // yellowButton
             // 
-            this.yellowButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.yellowButton.BackColor = System.Drawing.Color.Yellow;
             this.yellowButton.Location = new System.Drawing.Point(48, 142);
             this.yellowButton.Name = "yellowButton";
             this.yellowButton.Size = new System.Drawing.Size(235, 148);
@@ -62,7 +48,7 @@
             // 
             // blueButton
             // 
-            this.blueButton.BackColor = System.Drawing.Color.Aqua;
+            this.blueButton.BackColor = System.Drawing.Color.Blue;
             this.blueButton.Location = new System.Drawing.Point(302, 142);
             this.blueButton.Name = "blueButton";
             this.blueButton.Size = new System.Drawing.Size(235, 148);
@@ -82,7 +68,7 @@
             // 
             // pinkButton
             // 
-            this.pinkButton.BackColor = System.Drawing.Color.HotPink;
+            this.pinkButton.BackColor = System.Drawing.Color.MediumVioletRed;
             this.pinkButton.Location = new System.Drawing.Point(302, 296);
             this.pinkButton.Name = "pinkButton";
             this.pinkButton.Size = new System.Drawing.Size(235, 148);
@@ -106,7 +92,7 @@
             this.pointsLabel.AutoSize = true;
             this.pointsLabel.BackColor = System.Drawing.Color.Transparent;
             this.pointsLabel.Font = new System.Drawing.Font("Pristina", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pointsLabel.Location = new System.Drawing.Point(173, 477);
+            this.pointsLabel.Location = new System.Drawing.Point(173, 493);
             this.pointsLabel.Name = "pointsLabel";
             this.pointsLabel.Size = new System.Drawing.Size(110, 52);
             this.pointsLabel.TabIndex = 7;
@@ -117,14 +103,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Simon_Says.Properties.Resources.white_background;
+            this.BackgroundImage = global::Simon_Says.Properties.Resources.whitebackground;
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.simonTitle);
             this.Controls.Add(this.pinkButton);
             this.Controls.Add(this.greenButton);
             this.Controls.Add(this.blueButton);
             this.Controls.Add(this.yellowButton);
-            this.Controls.Add(this.gameExitButton);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(600, 600);
             this.Load += new System.EventHandler(this.GameScreen_Load);
@@ -134,8 +119,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button gameExitButton;
         private System.Windows.Forms.Button yellowButton;
         private System.Windows.Forms.Button blueButton;
         private System.Windows.Forms.Button greenButton;

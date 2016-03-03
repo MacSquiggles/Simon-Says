@@ -28,22 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.overExitButton = new System.Windows.Forms.Button();
             this.playAgainButton = new System.Windows.Forms.Button();
+            this.scoreLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // overExitButton
-            // 
-            this.overExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.overExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.overExitButton.ForeColor = System.Drawing.Color.White;
-            this.overExitButton.Location = new System.Drawing.Point(540, 0);
-            this.overExitButton.Name = "overExitButton";
-            this.overExitButton.Size = new System.Drawing.Size(60, 50);
-            this.overExitButton.TabIndex = 1;
-            this.overExitButton.Text = "X";
-            this.overExitButton.UseVisualStyleBackColor = false;
-            this.overExitButton.Click += new System.EventHandler(this.overExitButton_Click);
             // 
             // playAgainButton
             // 
@@ -57,21 +44,33 @@
             this.playAgainButton.UseVisualStyleBackColor = false;
             this.playAgainButton.Click += new System.EventHandler(this.playAgainButton_Click);
             // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.scoreLabel.Font = new System.Drawing.Font("Pristina", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.Location = new System.Drawing.Point(249, 175);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(0, 52);
+            this.scoreLabel.TabIndex = 5;
+            // 
             // GameOver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Simon_Says.Properties.Resources.whitebackground;
+            this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.playAgainButton);
-            this.Controls.Add(this.overExitButton);
             this.Name = "GameOver";
             this.Size = new System.Drawing.Size(600, 600);
+            this.Load += new System.EventHandler(this.GameOver_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button overExitButton;
         private System.Windows.Forms.Button playAgainButton;
+        private System.Windows.Forms.Label scoreLabel;
     }
 }

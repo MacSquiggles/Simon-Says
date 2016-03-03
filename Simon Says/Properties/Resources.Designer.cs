@@ -61,6 +61,33 @@ namespace Simon_Says.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream blueBeep {
+            get {
+                return ResourceManager.GetStream("blueBeep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream greenBeep {
+            get {
+                return ResourceManager.GetStream("greenBeep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream pinkBeep {
+            get {
+                return ResourceManager.GetStream("pinkBeep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap simonlogo {
@@ -73,10 +100,19 @@ namespace Simon_Says.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap white_background {
+        internal static System.Drawing.Bitmap whitebackground {
             get {
-                object obj = ResourceManager.GetObject("white background", resourceCulture);
+                object obj = ResourceManager.GetObject("whitebackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream yellowBeep {
+            get {
+                return ResourceManager.GetStream("yellowBeep", resourceCulture);
             }
         }
     }

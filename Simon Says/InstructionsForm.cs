@@ -26,10 +26,5 @@ namespace Simon_Says
             f.Controls.Add(gs);
             gs.BringToFront();
         }
-
-        private void instructionsExitButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
