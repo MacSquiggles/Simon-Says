@@ -52,28 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameOver.cs">
+    <Compile Include="Screens\GameOver.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GameOver.Designer.cs">
+    <Compile Include="Screens\GameOver.Designer.cs">
       <DependentUpon>GameOver.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameScreen.cs">
+    <Compile Include="Screens\GameScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GameScreen.Designer.cs">
+    <Compile Include="Screens\GameScreen.Designer.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="InstructionsForm.cs">
+    <Compile Include="Screens\InstructionsForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InstructionsForm.Designer.cs">
+    <Compile Include="Screens\InstructionsForm.Designer.cs">
       <DependentUpon>InstructionsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainScreen.cs">
+    <Compile Include="Screens\MainScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainScreen.Designer.cs">
+    <Compile Include="Screens\MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -81,16 +81,16 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameOver.resx">
+    <EmbeddedResource Include="Screens\GameOver.resx">
       <DependentUpon>GameOver.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameScreen.resx">
+    <EmbeddedResource Include="Screens\GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstructionsForm.resx">
+    <EmbeddedResource Include="Screens\InstructionsForm.resx">
       <DependentUpon>InstructionsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainScreen.resx">
+    <EmbeddedResource Include="Screens\MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -137,9 +137,7 @@
   <ItemGroup>
     <None Include="Resources\beep-09.wav" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Screens\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

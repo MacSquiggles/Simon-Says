@@ -46,13 +46,13 @@
             // 
             // scoreLabel
             // 
-            this.scoreLabel.AutoSize = true;
             this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
             this.scoreLabel.Font = new System.Drawing.Font("Pristina", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreLabel.Location = new System.Drawing.Point(249, 175);
+            this.scoreLabel.Location = new System.Drawing.Point(54, 147);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(0, 52);
+            this.scoreLabel.Size = new System.Drawing.Size(486, 96);
             this.scoreLabel.TabIndex = 5;
+            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GameOver
             // 
@@ -65,7 +65,6 @@
             this.Size = new System.Drawing.Size(600, 600);
             this.Load += new System.EventHandler(this.GameOver_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
