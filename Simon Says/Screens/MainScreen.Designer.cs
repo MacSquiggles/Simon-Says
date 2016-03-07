@@ -28,24 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainExitButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.playButton = new System.Windows.Forms.Button();
             this.instructionsButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // mainExitButton
-            // 
-            this.mainExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.mainExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mainExitButton.ForeColor = System.Drawing.Color.White;
-            this.mainExitButton.Location = new System.Drawing.Point(540, 0);
-            this.mainExitButton.Name = "mainExitButton";
-            this.mainExitButton.Size = new System.Drawing.Size(60, 50);
-            this.mainExitButton.TabIndex = 0;
-            this.mainExitButton.Text = "X";
-            this.mainExitButton.UseVisualStyleBackColor = false;
-            this.mainExitButton.Click += new System.EventHandler(this.mainExitButton_Click);
             // 
             // label1
             // 
@@ -82,15 +69,28 @@
             this.instructionsButton.UseVisualStyleBackColor = false;
             this.instructionsButton.Click += new System.EventHandler(this.instructionsButton_Click);
             // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.White;
+            this.exitButton.Font = new System.Drawing.Font("Pristina", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.exitButton.Location = new System.Drawing.Point(522, 0);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(78, 57);
+            this.exitButton.TabIndex = 4;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Simon_Says.Properties.Resources.whitebackground;
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.instructionsButton);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.mainExitButton);
             this.Name = "MainScreen";
             this.Size = new System.Drawing.Size(600, 600);
             this.ResumeLayout(false);
@@ -99,10 +99,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button mainExitButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button instructionsButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }

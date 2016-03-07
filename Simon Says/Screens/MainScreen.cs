@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* 
+Created by: Quigley
+Date: March 2016
+Discription: a modern version of the classic game "Simon"
+ */
+ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -16,9 +21,10 @@ namespace Simon_Says
         {
             InitializeComponent();
         }
-
         private void instructionsButton_Click(object sender, EventArgs e)
         {
+            //if the instructions button is clicked, a new user control is added 
+            //and centred, and the mainscreen is removed
             InstructionsForm inf = new InstructionsForm();
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -28,17 +34,20 @@ namespace Simon_Says
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            GameScreen gs = new GameScreen();
+            //if the play button is clicked then the loading screen opens 
+            //and is centred and the main screen is removed
+            loadingScreen ls = new loadingScreen();
             Form f = this.FindForm();
             f.Controls.Remove(this);
-            gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-            f.Controls.Add(gs);
-            gs.BringToFront();
+            ls.Location = new Point((f.Width - ls.Width) / 2, (f.Height - ls.Height) / 2);
+            f.Controls.Add(ls);
+            ls.BringToFront();
         }
 
-        private void mainExitButton_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
         {
-          
+            //if exit button is clicked the program closes
+            Application.Exit();
         }
     }
 }

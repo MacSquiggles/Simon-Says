@@ -30,13 +30,14 @@
         {
             this.playAgainButton = new System.Windows.Forms.Button();
             this.scoreLabel = new System.Windows.Forms.Label();
+            this.mainScreenButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // playAgainButton
             // 
             this.playAgainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.playAgainButton.Font = new System.Drawing.Font("Pristina", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playAgainButton.Location = new System.Drawing.Point(54, 469);
+            this.playAgainButton.Location = new System.Drawing.Point(54, 354);
             this.playAgainButton.Name = "playAgainButton";
             this.playAgainButton.Size = new System.Drawing.Size(486, 71);
             this.playAgainButton.TabIndex = 4;
@@ -54,11 +55,23 @@
             this.scoreLabel.TabIndex = 5;
             this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // mainScreenButton
+            // 
+            this.mainScreenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.mainScreenButton.Font = new System.Drawing.Font("Pristina", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainScreenButton.Location = new System.Drawing.Point(54, 464);
+            this.mainScreenButton.Name = "mainScreenButton";
+            this.mainScreenButton.Size = new System.Drawing.Size(486, 71);
+            this.mainScreenButton.TabIndex = 6;
+            this.mainScreenButton.Text = "Main Screen";
+            this.mainScreenButton.UseVisualStyleBackColor = false;
+            // 
             // GameOver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Simon_Says.Properties.Resources.whitebackground;
+            this.Controls.Add(this.mainScreenButton);
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.playAgainButton);
             this.Name = "GameOver";
@@ -71,5 +84,6 @@
         #endregion
         private System.Windows.Forms.Button playAgainButton;
         private System.Windows.Forms.Label scoreLabel;
+        private System.Windows.Forms.Button mainScreenButton;
     }
 }
