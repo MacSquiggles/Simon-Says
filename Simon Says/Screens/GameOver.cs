@@ -41,7 +41,7 @@ namespace Simon_Says
             scoreLabel.Text = "Correct Guesses: " + Form1.score;
         }
 
-        private void mainMenuButton_Click(object sender, EventArgs e)
+        private void mainScreenButton_Click(object sender, EventArgs e)
         {
             //if the main menu button is pressed, the gameOver user control closes, and
             //the main screen opens and is centred in the screen

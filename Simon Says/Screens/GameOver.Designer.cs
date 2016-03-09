@@ -65,6 +65,7 @@
             this.mainScreenButton.TabIndex = 6;
             this.mainScreenButton.Text = "Main Screen";
             this.mainScreenButton.UseVisualStyleBackColor = false;
+            this.mainScreenButton.Click += new System.EventHandler(this.mainScreenButton_Click);
             // 
             // GameOver
             // 
